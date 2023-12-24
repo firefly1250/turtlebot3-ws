@@ -1,0 +1,10 @@
+services:
+  opencr-setup:
+    build:
+      context: docker/opencr_setup
+    volumes:
+      - /dev/ttyACM0:/dev/ttyACM0
+    environment:
+      - OPENCR_PORT=/dev/ttyACM0
+      - OPENCR_MODEL=burger
+    privileged: true

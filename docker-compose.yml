@@ -14,4 +14,11 @@ services:
     volumes:
       - /dev/ttyACM0:/dev/ttyACM0
       - /dev/ttyUSB0:/dev/ttyUSB0
+      - ./ws/:/home/ubuntu/ws
+    working_dir: /home/ubuntu/ws
     privileged: true
+    environment:
+      - ROS_DOMAIN_ID=30 
+      - LDS_MODEL=LDS-02
+      - TURTLEBOT3_MODEL=burger
+    user: ubuntu

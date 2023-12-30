@@ -1,3 +1,6 @@
 [submodule "ws/src/turtlebot"]
 	path = ws/src/turtlebot3
 	url = https://github.com/firefly1250/turtlebot3.git
+[submodule "ws/src/ld08_driver"]
+	path = ws/src/ld08_driver
+	url = https://github.com/ROBOTIS-GIT/ld08_driver.git

@@ -8,3 +8,10 @@ services:
       - OPENCR_PORT=/dev/ttyACM0
       - OPENCR_MODEL=burger
     privileged: true
+  ros:
+    build:
+      context: docker/ros
+    volumes:
+      - /dev/ttyACM0:/dev/ttyACM0
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    privileged: true
